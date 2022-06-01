@@ -1,0 +1,11 @@
+clc;
+clear all;
+close all;
+
+syms t a w n;
+disp("input signal x(t)=");
+xt=1/exp(10*t);
+disp(xt);
+disp("Laplace transform of X(s)=");
+XS=laplace(xt);
+disp(XS);
