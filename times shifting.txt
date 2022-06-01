@@ -1,0 +1,13 @@
+clc 
+n=-2:2
+x=[1 2 3 -1 0]
+subplot(2,1,1)
+stem(n,x)
+xlabel('time')
+ylabel('amplitude')
+title('signal')
+axis([-3 3 -4 6])
+
+y=input('enter the value-');
+m=(n+y)
+subplot(2,1,2)

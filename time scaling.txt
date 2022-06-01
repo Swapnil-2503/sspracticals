@@ -1,0 +1,15 @@
+clc
+n=-2:2
+x=[4 2 -3 1 5]
+subplot(2,1,1)
+stem(n,x)
+xlabel('time')
+ylabel('amplitude')
+title('signal')
+y=input('enter the value')
+subplot(2,1,2)
+m=n/y
+stem(m,x)
+xlabel('time')
+ylabel('amplitude')
+title('scaling operation')
