@@ -13,3 +13,9 @@ stem(m,x)
 xlabel('time')
 ylabel('amplitude')
 title('scaling operation')
+
+stem(m,x)
+xlabel('time')
+ylabel('amplitude');
+title('shifting operation');
+axis([-1 5 -1 6])
