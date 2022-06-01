@@ -1,0 +1,15 @@
+clc 
+n=-2:2
+x=[4 2 -3 15]
+subplot(2,1,1)
+stem(n,x)
+xlabel('time')
+ylabel('amplitude')
+title('signal')
+a=fliplr(x)
+subplot(2,1,2)
+
+stem(n,a)
+xlabel('time')
+ylabel('amplitude')
+title('time reversal');
