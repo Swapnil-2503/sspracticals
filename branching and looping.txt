@@ -1,0 +1,38 @@
+%if elseloop
+%even or odd
+>>number =input('enter any number: ');
+enter any number: 45
+number=
+       4
+>> if rem(number,2)==0
+fprintf('%d is an even',number);
+else fprintf('%d is an odd',number);
+end
+
+%for loop
+c=0;
+no=input('enter the number: ');
+enter the number: 3
+for i=1:no
+if rem(no,i)==0;
+c=c+1;
+end
+end
+>>if c>2
+disp('not prime')
+end
+>>if c<=2
+disp('PRIME no')
+end
+
+
+%while loop
+
+clc
+x=input('enter any no: ');
+y=x;
+while x>1
+y=y*(x-1)
+x=x-1
+end
+fprintf('factorial=%d\n',y);
