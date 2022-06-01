@@ -1,0 +1,39 @@
+%addition
+
+clc;
+close all;
+clear all;
+N1=-6:5;
+x=[4 5 4 0 6 7 8 1 0 8 2 1];
+subplot(3,1,1);
+stem(N1,x);
+title('x')
+N2=-5:5;
+y=[7 4 -7 9 8 0 1 2 3 4 5]
+subplot(3,1,2);
+stem(N2,y);
+title('y');
+
+N3=min(min(N1),min(N2)):max(max(N1),max(N2));
+
+zeros(1,length(N3));
+z1=zeros(1,length(N3));
+z(find(N3>=min(N1)&(N3<=max(N1)))=x;
+z1(find(N3>=min(N2)&(N3<=max(N2)))=y;
+
+sum=z+z1;
+subplot(3,1,3);
+stem(N3,sum);
+title('addition');
+
+%same for sub and mul only below
+
+diff=z-z1;
+subplot(3,1,3);
+stem(N3,diff);
+title('subtraction');
+
+mul=z*z1;
+subplot(3,1,3);
+stem(N3,mul);
+title('multiplication');
